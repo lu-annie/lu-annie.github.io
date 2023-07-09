@@ -3917,3 +3917,6 @@ input, select, textarea {
 			gap: 15px;
 		  }
 		  
+		  hr.solid {
+			border-top: 3px solid #bbb;
+		  }
