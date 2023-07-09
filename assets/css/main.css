@@ -3902,7 +3902,7 @@ input, select, textarea {
 
 		.picture {
 			cursor: pointer;
-			width: 425px;
+			width: 100%;
 		  }
 		  
 		  .picture:hover {
