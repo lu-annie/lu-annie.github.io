@@ -3901,7 +3901,7 @@ input, select, textarea {
 		}
 
 		.picture {
-			cursor: pointer;
+			cursor:pointer;
 			width: 100%;
 		  }
 		  
@@ -3915,6 +3915,10 @@ input, select, textarea {
 			flex-wrap: wrap;
 			margin: auto;
 			gap: 15px;
+		  }
+
+		  .banner {
+			width: 100%;
 		  }
 		  
 		  hr.solid {
