@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>City of Bellevue Signage Redesign Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			.responsive {
+			  width: 100%;
+			  height: auto;
+			}
+			.column {
+    	float: left;
+    	width: 25%;
+    	}
+
+    	.row:after {
+    	content: "";
+   	 	display: table;
+    	clear: both;
+		}
+
+		.column2 {
+				float: left;
+    			width: 50%;
+			}
+		
+			.row2:after {
+    	content: "";
+   	 	display: table;
+    	clear: both;
+			}
+		</style>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="favicon copy.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Intro -->
+                <section id="intro" class="wrapper style1 fullscreen fade-up">
+                    <div class="inner">
+                        <div id="loginForm">
+                            <h2>You will need to download and open a ZIP file in order to view the project. Please enter the password in order to access this file: </h2>
+                            <input type="password" id="password" placeholder="Password">
+                            <br>
+                            <input type="button" id="submit" value="Submit">
+                            <p id="errorMessage" style="color: red;"></p>
+                        </div>
+                        <ul class="actions">
+                            <li><a href="index.html" class="button scrolly">Back</a></li>
+                        </ul>
+                </section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Annie Lu. Made with &#9825; in Seattle, Washington.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+                const password = 'SecureDocument';
+        
+                document.getElementById('submit').addEventListener('click', function() {
+                    const enteredPassword = document.getElementById('password').value;
+                    if (enteredPassword === password) {
+                        window.location.href = 'https://drive.google.com/file/d/1cEGgIz4XswlM-jOev5Bs_8N7dOKKnHXU/view';
+                    } else {
+                        document.getElementById('errorMessage').textContent = 'Password is incorrect. Please try again.';
+                    }
+                });
+            </script>
+
+	</body>
+</html>
