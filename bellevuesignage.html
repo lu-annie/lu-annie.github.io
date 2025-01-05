@@ -40,19 +40,43 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Intro -->
-                <section id="intro" class="wrapper style1 fullscreen fade-up">
-                    <div class="inner">
-                        <div id="loginForm">
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
 							<u><a href="index.html">← back</a></u><br><br>
-                            <h2>You will need to download and open a ZIP file in order to view the project. Please enter the password in order to access this file: </h2>
-							<p></p>
-                            <input type="password" id="password" placeholder="Password">
-							<p></p>
-                            <p id="errorMessage"></p>
-                            <input type="button" id="submit" value="Submit">
-							<p></p>
+							<h1>City of Bellevue Signage Redesign 🌲</h1>
+							<p>Assessment and redesign of the City of Bellevue's current signage system as part of our 2024 University of Washington HCDE Undergraduate Senior Capstone.</p>
+							<img
+								  class = "banner"
+								src=""
+								  alt="Bellevue Signage"
+								/>
+							<section>
+								<hr class="solid">
+								<div class="row">
+									<div class="column">
+										<h3>Topics</h3>
+										Service Design • UX Research • Signage • Design Systems
+									</div>
+									<div class="column">
+										<h3>Duration</h3>
+										6 months, 1/2024 - 6/2024
+									</div>
+									<div class="column">
+										<h3>Type</h3>
+										UW HCDE Senior Capstone Project
+									</div>
+									<div class="column">
+										<h3>My Roles</h3>
+										I was in charge of doing User Research (Interviewing, Personas, and Analysis), designing the Visual Design System and Events Flow, and contributing to the Get Wasted Lo-Fi Prototype Website, and Get Wasted Hi-Fi Prototype Website.
+									</div>
+								</div>
+								<hr class="solid">
+								<h3>Under construction</h3>
+								
+							</br>
+							</br>
                         </div>
-                </section>
+					</section>
 
 			</div>
 
@@ -64,6 +88,7 @@
 				</ul>
 			</div>
 		</footer>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -72,18 +97,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-            <script>
-                const password = 'SecureDocument';
-        
-                document.getElementById('submit').addEventListener('click', function() {
-                    const enteredPassword = document.getElementById('password').value;
-                    if (enteredPassword === password) {
-                        window.location.href = 'https://drive.google.com/file/d/1cEGgIz4XswlM-jOev5Bs_8N7dOKKnHXU/view';
-                    } else {
-                        document.getElementById('errorMessage').textContent = 'Password is incorrect. Please try again.';
-                    }
-                });
-            </script>
 
 	</body>
 </html>
